@@ -38,7 +38,7 @@
         {
             // If a Sudoku game is completed correctly,
             // sum of any column or row must be equal to 45
-            int TrueSumOfOneRowOrCol = 45;
+            int trueSumOfOneRowOrColElements = 45;
 
             int elemsSum = 0;
             int count = 0;
@@ -48,7 +48,7 @@
                 for (int j = 0; j < 9; j++)
                     elemsSum += sudokuSamples[i, j];
 
-                if (elemsSum == TrueSumOfOneRowOrCol)
+                if (elemsSum == trueSumOfOneRowOrColElements)
                     count++;
 
                 elemsSum = 0;
